@@ -10,13 +10,13 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
         }
 
         header {
-            background-color: #333;
+            background-color: #ff6b6b; /* Vibrant Coral */
             color: #fff;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
             text-align: center;
         }
 
@@ -24,37 +24,44 @@
             display: flex;
             justify-content: center;
             padding: 1rem;
-            background-color: #444;
+            background-color: #ffa502; /* Bright Orange */
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 1rem;
-            font-size: 1.2rem;
+            margin: 0 1.5rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #2f3542; /* Dark Grey */
         }
 
         .container {
-            width: 80%;
-            margin: 2rem auto;
+            width: 85%;
+            margin: 3rem auto;
         }
 
         .products {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 1rem;
+            gap: 1.5rem;
         }
 
         .product-card {
             background-color: #fff;
-            border-radius: 8px;
+            border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease-in;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
 
         .product-card:hover {
-            transform: scale(1.05);
+            transform: scale(1.07);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
         }
 
         .product-image img {
@@ -63,30 +70,33 @@
         }
 
         .product-info {
-            padding: 1rem;
+            padding: 1.5rem;
             text-align: center;
+            background-color: #f7f7f7; /* Soft Grey Background */
         }
 
         .product-info h3 {
-            font-size: 1.2rem;
-            margin: 0.5rem 0;
+            font-size: 1.4rem;
+            margin: 0.75rem 0;
+            color: #ff4757; /* Soft Red for Title */
         }
 
         .product-info p {
-            font-size: 1rem;
-            color: #888;
+            font-size: 1.1rem;
+            color: #57606f; /* Muted Dark Grey for Description */
         }
 
         .product-info .price {
-            font-size: 1.4rem;
-            color: #333;
+            font-size: 1.5rem;
+            color: #1e90ff; /* Bright Blue for Price */
+            font-weight: bold;
         }
 
         footer {
             text-align: center;
-            padding: 2rem 0;
-            background-color: #333;
-            color: #fff;
+            padding: 2.5rem 0;
+            background-color: #2f3542; /* Dark Grey Footer */
+            color: #f1f2f6; /* Light Grey for Footer Text */
         }
     </style>
 </head>
@@ -134,6 +144,16 @@
                 <h3>ZAPATO TACÓN</h3>
                 <p>EFECTO ACHAROLADO</p>
                 <p class="price">$1,099.00</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://via.placeholder.com/250x300" alt="Product 3">
+            </div>
+            <div class="product-info">
+                <h3>PLAYERA</h3>
+                <p>EDICIÓN DEPORTIVA</p>
+                <p class="price">$599.00</p>
             </div>
         </div>
     </div>
